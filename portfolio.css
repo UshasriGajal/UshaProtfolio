@@ -701,7 +701,7 @@ h5{
         background-repeat: no-repeat;
         background-size: cover; */
         padding-top: 100px;
-        height: 550px;
+        height: 600px;
         /* border: 1px solid black; */
     }
     #homeimg{
@@ -744,9 +744,9 @@ h5{
     #mypic{
         height: 100%;
         width: 70%;
-        margin-top: 0px ;
+        margin-top: 10px ;
         border-radius: 5px;
-        margin-left: 50px;
+        margin-left: 25%;
     }
     #matter{
         font-size: 14px;
@@ -793,7 +793,7 @@ h5{
         font-size: 15px;
     }
     #aboutDiv{
-        margin-left: 30%;
+        margin-left: 15%;
         display: flex;
         text-align: center;
     }
@@ -836,6 +836,8 @@ h5{
     .skillrow{
         height: 30%;
         display:flex;
+        justify-content: space-between ;
+        margin-right:5%;
         /* border: 1px solid black; */
     }
     .skillitem{
@@ -844,7 +846,7 @@ h5{
         /* width: 33.3%; */
         /* border: 1px solid black; */
         margin-left:5%;
-        margin-right:5%;
+/*         margin-right:5%; */
         justify-content: space-between;
     }
     
@@ -1002,7 +1004,8 @@ h5{
         display: inline;
     }
     #linkes{
-        margin-left: 2%;
+        margin-top: 2%;
+        margin-left: 1%;
     }
 }
 
