@@ -276,7 +276,8 @@ h5{
 .education
 {
     display: flex;
-    margin-left: 30px;
+    margin-left: 10%;
+    margin-right: 20%;
     justify-content: space-around;
 }
 .edu
