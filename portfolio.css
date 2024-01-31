@@ -431,7 +431,7 @@ h5{
     /* margin-left:10px ; */
     margin-right:10px ;
     display:flex;
-    display: none;
+/*     display: none; */
     justify-content:space-between;
   }
   .profilebut{
