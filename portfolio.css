@@ -874,7 +874,7 @@ h5{
         margin-bottom:0px;
     }
     #skills{
-        background-color: rgb(252, 248, 242);
+        background-color: rgb(245, 210, 229);
         padding-top: 60px;
         padding-bottom: 30px;
         margin-left: 20px;
@@ -883,7 +883,6 @@ h5{
         text-align: center;
         height: 380px;
         margin-top: 0px;
-        /* border: 1px solid black; */
     }
     .skillrow{
         height: 30%;
