@@ -20,15 +20,16 @@
 
         
         <div id="total">
-        <div id="sidelinks">
+        <div class="navbar sticky-top">
+        <div id="sidelinks" >
             <div class="profile">
                 <!-- <img src="C:\Users\USHASRI\OneDrive\Pictures\portfolio.jpeg" height="30px" width="30px"> -->
                 <p id="name">USHASRI GAJAL</p>
                 <p>FULL STACK DEVELOPER</p>
             </div>
             <!-- <hr> -->
-            <div id="navsize">
-            <nav class="navbar" >
+            <div id="navsize" class="sticky-top">
+            <nav class="navbar sticky-top" >
                 <div class="container-fluid">
                   <button  onclick="navitem()" id="navbut" >
                     <span class="navbar-toggler-icon">
@@ -63,7 +64,7 @@
         <div class="portbut"><a  id="col" href="#home">Home  </a></div>
         <div class="portbut"><a id="col" href="#about">About  </a></div>
         <div class="portbut"><a id="col" href="#skills">Skills  </a></div>
-        <div class="portbut"><a id="col" href="#projects">Projects</a></div>
+        <div class="portbut"><a id="col" href="#carproject">Projects</a></div>
         <div class="portbut"><a id="col" href="https://drive.google.com/file/d/1QfNJEmgS09nI1JceFo134qAc3QSfymVl/view" download >Resume</a></div>
         <div class="portbut"><a id="col" href="#Github">GitHub</a></div>
         <!-- <div class="portbut"><a id="col" href="#HackerRank">HackerRank</a></div> -->
@@ -71,6 +72,7 @@
 
     </div>
            
+        </div>
         </div>
     
         <div class="main">
@@ -179,9 +181,166 @@
         </div>
      </div>
 
+     <div id="carproject">
+        <div id="proimage" > <img src="https://www.bharat-associates.com/img/Your-Projects-Icon.jpg" alt="" height="100%" width="100%" ></div>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+
+                <div id="caritems">
+                    <div class="cardvid" >
+                        <div class="cardvids" class="card"  >
+                            <!-- <div > -->
+                                <video id="videoitem" height="100%" width="100%" loop muted autoplay="autoplay"> 
+                                    <source src="images/movieapi.mp4" type="video/mp4">
+                                </video>
+                            <!-- </div> -->
+                            
         
-        <!-- <div id="HackerRank"></div> -->
-        <div id="projects" onload="projects()">
+                            <div class="card-body">
+                                <div class="videomatter">
+                                    <div class="vidmat">
+                                        <h4>Movie Api</h4>
+                                        <p>This Website provides the movie posters and the information about the movie that we search for and also provide similar movie posters according to the name we search "With Responsiveness" </p>
+                                        <p>Tools used:JavaScript,Html,Css,Bootstrap</p>
+                                    </div>
+                                    <div id="projectbut">
+                                        <button class="sizebut" onclick="moviebut()">View project</button>
+                                        <button class= "sizebut" onclick="moviecode()">  View Code</button>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="cardvid" >
+                            <div class="cardvids" class="card"  >
+                                <!-- <div > -->
+                                    <video id="videoitem" height="100%" width="100%" loop muted autoplay="autoplay">  
+                                <source src="images/currency converter.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-body">
+                                <div class="videomatter">
+                                    <div class="vidmat">
+                                        <h4>Currency Converter</h4>
+                                        <p>This Website converts the one currency value to another currency value "With Responsiveness"  </p>
+                                        <p>Tools used:JavaScript,Html,Css</p>
+                                    </div>
+                                    <div id="projectbut">
+                                        <button class="sizebut" onclick="currencybut()">View project</button>
+                                        <button class= "sizebut" onclick="currencycode()">  View Code</button>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+        
+                        
+                          <div class="cardvid">
+                          <div class="cardvids" class="card" >
+                            <video  id="videoitem" height="100%" width="100%" loop muted autoplay="autoplay"> 
+                                <source src="images/tictactoe.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-body">
+                                <div class="videomatter">
+                                    <div class="vidmat">
+                                    <h4>TIC TOC TOE</h4>
+                                    <p>Tic toc Toe game to play between human and computer "With Responsiveness"</p>
+                                    <p>Tools used:JavaScript,Html,Css</p>
+                                    </div>
+                                    <div id="projectbut">
+                                        <button class="sizebut" onclick="ticbut()">View project</button>
+                                        <button class= "sizebut" onclick="ticcode()">  View Code</button>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+
+              </div>
+              <div class="carousel-item">
+                
+                <div id="caritems">
+                    <div class="cardvid" >
+                        <div class="cardvids" class="card"  >
+                            
+                                <video id="videoitem"  height="100%" width="100%" loop muted autoplay="autoplay"> 
+                                    <source src="images/typing.mp4" type="video/mp4">
+                                </video>
+                            
+                            
+        
+                            <div class="card-body">
+                                <div class="videomatter">
+                                    <div class="vidmat">
+                                        <h4>Typing Test</h4>
+                                        <p>This Website provides the typing capacity of a person it can be modified with time for 1min, 2mins or 5mins and it also have easy,medium and hard levels</p>
+                                        <p>Tools used:JavaScript,Html,Css</p>
+                                    </div>
+            
+                                    <div id="projectbut">
+                                        <button class="sizebut" onclick="Typebut()">View project</button>
+                                        <button class= "sizebut" onclick="Typecode()">  View Code</button>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="cardvid">
+                          <div class="cardvids" class="card" >
+                            <video id="videoitem" height="100%" width="100%" loop muted autoplay="autoplay"> 
+                                <source src="images/zomato.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-body">
+                              <div class="videomatter">
+                                <div class="vidmat">
+                                <h4>Zomato</h4>
+                                <p>This website is a static page using ReactJs "With Responsiveness"</p>
+                                <p>Tools used:ReactJs,Html,Css,Bootstrap</p>
+                                </div>
+                                <div id="projectbut">
+                                    <button class="sizebut" onclick="Zomatobut()">View project</button>
+                                    <button class= "sizebut" onclick="Zomatocode()">  View Code</button>
+                                </div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+        
+        
+                          <div class="cardvid">
+                          <div class="cardvids" class="card" >
+                            <!-- <video id="videoitem" height="100%" width="100%" loop muted autoplay="autoplay"> 
+                                <source src="images/movieapi.mp4" type="video/mp4">
+                            </video> -->
+                            <!-- <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div> -->
+                          </div>
+                        </div>
+                </div>
+
+              </div>
+            </div>
+            <button  class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span  class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span  class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+     </div>   
+    
+     
+         <!-- <div id="HackerRank"></div> -->
+        <div id="projects" class="smallsize" onload="projects()">
             <div id="proimage" > <img src="https://www.bharat-associates.com/img/Your-Projects-Icon.jpg" alt="" height="100%" width="100%" ></div>
             <div id="projectdiv">
                 <div class="proitems">
@@ -268,7 +427,7 @@
                         <h4>Zomato</h4>
                         <p>This website is a static page using ReactJs "With Responsiveness"</p>
                         <p>Tools used:ReactJs,Html,Css,Bootstrap</p>
-                    </div>
+                        </div>
                         <div id="projectbut">
                             <button class="sizebut" onclick="Zomatobut()">View project</button>
                             <button class= "sizebut" onclick="Zomatocode()">  View Code</button>
@@ -276,15 +435,18 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
+
+
+
         <!-- <div id="resume" onclick="Resumebut()"''>Resume</div>  -->
-        <div id="Github">
+        <div id="Github" class="Github">
             <div id="githubimg">
                 <div id="giticon"> <img src="images/icons8-github.gif" height="40px" width="40px"></video>
                 <h2>GitHub</h></div>
 
                 <div  class="gitimg" id="gitimg">
-                   <i class="fa-solid  fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;" ><img id="image" src="images/github.png" alt="" height="100%" width="100% ">   </i>
+                   <i class="fa-solid  fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;" ><img id="image" src="C:\Users\USHASRI\OneDrive\Pictures\Screenshots\github.png" alt="" height="100%" width="100% ">   </i>
                    <!-- <i class="fa-solid  fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;" ><img id="image" src="images/github.png" alt="" height="100%" width="100% ">   </i> -->
                     <div class="overlay">My GitHub Profile</div>
                 </div>
@@ -317,28 +479,28 @@
             
             <div id="contactdiv">
                 <div id="contdiv" >
-                    <img src="https://img.icons8.com/?size=52&id=2olGSGqpqGWD&format=png" height="24px" width="24px"> Contact Me
+                    <img src="https://img.icons8.com/?size=72&id=113641&format=png" height="30px" width="30px"> Contact Me
 
                     
                 </div>
                 
                 <div id="maincont" >
                     <div id="linkes">
-                        <img src="https://img.icons8.com/?size=76&id=68415&format=png" id="contimg" alt="">ushasrigajal@gmail.com</div>
+                        <img class="imgcol" src="https://img.icons8.com/?size=80&id=68248&format=png" id="contimg" alt="">ushasrigajal@gmail.com</div>
                     <div id="linkes">
-                     <img  id="call"     src="https://img.icons8.com/?size=48&id=60963&format=png" > 9390986960
+                     <img  id="call"     src="https://img.icons8.com/?size=52&id=43436&format=png" > 9390986960
                     </div>
                     <div id="linkes">
 
-                        <img src="https://img.icons8.com/?size=48&id=85353&format=png" alt="" id="contimg"> Bangalore
+                        <img src="https://img.icons8.com/?size=60&id=43162&format=png" alt="" id="contimg"> Bangalore
 
                         <!-- <img src="images/icons8-location.gif" alt="" id="contimg"> Bangalore> -->
                     </div>
                     <div id="linkes">
-                        <button id="linked" onclick="linkedin()"> <img src="https://img.icons8.com/?size=48&id=85044&format=png" alt="" id="call"> LinkedIn</button>
+                        <button id="linked" onclick="linkedin()"> <img src="https://img.icons8.com/?size=80&id=108812&format=png" alt="" id="call"> LinkedIn</button>
                     </div>
                     <div id="linkes">
-                        <button id="linked" onclick="profilebut()"><img src="https://img.icons8.com/?size=48&id=62856&format=png" alt=""id="call" > Github</button>
+                        <button id="linked" onclick="profilebut()"><img src="https://img.icons8.com/?size=60&id=SyIpM4vSpYTF&format=png" alt=""id="call" > Github</button>
                     </div>
                 </div>
             </div>
