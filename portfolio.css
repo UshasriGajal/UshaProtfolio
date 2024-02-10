@@ -1,5 +1,17 @@
+html,body {
+    width: 100%;
+    margin:0%;
+    padding:0%;
+    overflow-x: hidden;
+}
 #body {
-    background-color :rgb(27, 27, 101);
+    background-color :rgb(250, 250, 238);
+    /* margin-right: 0px; */
+    width: 100%;
+    margin:0;
+    padding:0;
+    /* padding-right: 0px; */
+    overflow-x: hidden;
 }
 #total{
     background-color: beige;
@@ -7,6 +19,32 @@
 .complete 
 {
     background-color: beige;
+}
+.collapse{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row-reverse;
+}
+#navdiv{
+    background-color: rgb(19, 19, 80);
+}
+.navbar-nav{
+    /* border: 1px solid black; */
+    display: flex;
+    width: 100%;
+    /* margin-right: 5%; */
+    justify-content: space-around;
+    font-size: 20px;
+}
+.name_Div{
+    /* border: 1px solid white; */
+    line-height: 5px;
+
+}
+#pTag{
+    font-style: italic;
+    margin-left: 20%;
+    color: white;
 }
 #nav{
     display: none;
@@ -35,6 +73,7 @@
 }
 .profile{
     /* padding-top: 10px; */
+    /* margin-left: 20%; */
     margin-top: 0px;
     background-color: rgb(19, 19, 80);
     color: white;
@@ -42,8 +81,12 @@
     /* text-align: center; */
     /* border: 1px solid black; */
 }
+.profile >p{
+    margin-left: 20%;
+}
 #name{
-    font-size:25px ;
+    /* margin-left: 20%; */
+    font-size:20px ;
     font-style: italic;
     margin-top: 15px;
     margin-bottom: 0px;
@@ -81,8 +124,8 @@
     background-repeat: no-repeat;
     background-size: cover; */
     margin-bottom:0px ;
-    padding-top: 70px;
-    margin-left: 70px;
+    /* padding-top: 70px; */
+    /* margin-left: 70px; */
     /* margin-right: 40px; */
     height: 550px;
     /* border: 1px solid black; */
@@ -97,7 +140,7 @@
     /* height: 700px; */
     /* width: 100%; */
     /* margin-right: 40px; */
-    margin-left: 70px; 
+    /* margin-left: 70px;  */
     /* margin-bottom: 40px; */
     /* padding-top: 70px; */
     margin-top: 0px;
@@ -151,7 +194,7 @@ h4{
 
 .profile p
 {
-    margin-left: 70px;
+    
     font-size: 0.8rem;;
 
 }
@@ -261,7 +304,8 @@ h5{
 .main
 {
     background-color:rgb(19, 19, 80);
-    
+    top: 0;
+    left: 0;
     width: 100%;
     /* margin-left: 300px; */
 
@@ -331,9 +375,12 @@ h5{
     text-align: center;
     height: 450px;
     margin-top: 0px;
-    margin-left: 70px;
+    /* padding-left: ; */
+    /* margin-left: 70px; */
+
     padding-top: 8%;
-    /* margin-right: 40px; */
+
+    /* margin-right: 0px; */
     margin-bottom: 0px;
     /* border: 1px solid black; */
 }
@@ -344,14 +391,18 @@ h5{
     height: 26%;
     display:flex;
     margin-top: 20px;
-    /* border: 1px solid black; */
+    justify-content: center;
+    justify-content: space-between;
+    /* margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid black; */
 }
 .skillitem{
     height: 90px;
     width: 100px;
     /* width: 33.3%; */
     /* border: 1px solid black; */
-    margin-left:15%;
+    margin-left:5%;
     margin-right:5%;
     justify-content: space-between;
 }
@@ -363,7 +414,7 @@ h5{
     display: flex;
     height: 600px;
     /* width: 90%; */
-    margin-left: 70px;
+    /* margin-left: 70px; */
     padding-top: 15%;
     /* margin-top:5%; */
     /* margin-top: 50px; */
@@ -601,13 +652,14 @@ h5{
     display: none;
 }
 #carproject{
-    height: 950px;
+    height: 1000px;
     /* background-color: rgb(250, 250, 238); */
     /* background-image: url("https://img.freepik.com/free-vector/abstract-background-design-dark-green_53876-59276.jpg");
     background-repeat: no-repeat;
     background-size: cover; */
     background-color: rgb(250, 250, 238);
-    margin-left: 70px;
+    /* margin-left: 70p
+    x; */
     padding-top: 10%;
     /* background-color: rgb(27, 27, 87); */
 }
@@ -632,7 +684,7 @@ h5{
 
 #projects{
     height: 800px;
-    margin-left: 70px;
+    /* margin-left: 70px; */
     /* margin-right: 40px; */
     background-color: rgb(250, 250, 238);
     padding-top: 10%;
@@ -778,7 +830,7 @@ h5{
     /* margin-left: 2%; */
     /* margin-right: 2%; */
     width: 90%;
-    height:300px;
+    height:250px;
     /* border: 1px solid black; */
 }
 .sizebut{
@@ -790,18 +842,45 @@ h5{
     border-radius: 10px;
     color: black;
     border:2px solid rgb(235, 234, 234) ;
-    background-color: rgb(235, 234, 234);
+    background-color: beige);
 }
 /* .sizebut{ 
     display: inline; */
     /* display: none; */
 /* } */
 @media screen and (max-width: 300px){
-    .body{
-        margin-right: 0px;
+    html,body {
+        width: 100%;
+        margin:0%;
+        padding:0%;
+        overflow-x: hidden;
+    }
+    #body {
+        background-color :rgb(250, 250, 238);
+        /* margin-right: 0px; */
+        width: 100%;
+        margin:0;
+        padding:0;
+        /* padding-right: 0px; */
+        overflow-x: hidden;
     }
 }
 @media screen and (max-width: 980px){
+    html,body {
+        width: 100%;
+        margin:0%;
+        padding:0%;
+        overflow-x: hidden;
+    }
+    #body {
+        background-color :rgb(250, 250, 238);
+        /* margin-right: 0px; */
+        width: 100%;
+        margin:0;
+        padding:0;
+        /* padding-right: 0px; */
+        overflow-x: hidden;
+    }
     #mypic{
         margin-top: 20%;
     }
@@ -815,26 +894,56 @@ h5{
         height: 30%;
     }
 }
-@media screen and (max-width: 580px){
+@media screen and (max-width: 490px){
+    #projectdiv{
+        width: 100%;
+    }
+    .proitems{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 590px){
     /* #nav{
         
     } */
-    body{
+    html,body {
         width: 100%;
-        margin-right: 0px;
-        padding-right: 0px;
-        background-color: rgb(19, 19, 80);
-        overflow-x:unset;
+        margin:0%;
+        padding:0%;
+        overflow-x: hidden;
+    }
+    #body {
+        background-color :rgb(250, 250, 238);
+        /* margin-right: 0px; */
+        width: 100%;
+        margin:0;
+        padding:0;
+        /* padding-right: 0px; */
+        overflow-x: hidden;
     }
     #total{
         width: 100%;
         margin-right: 0px;
     }
+    #about{
+        margin-left: 0px;
+    }
     #port{
         display: none;
     }
     .profile{
+        /* font-size: 15px; */
+        background-color: rgb(19, 19, 80);
         width: 60%;
+        margin-left:2% ;
+        height: 50px;
+    }
+    .profile > p{
+        margin-left: 0px;
+    }
+    #name{
+        font-size: 15px;
+        margin-left: 0px;
     }
     .topnav a {
         /* color: white; */
@@ -864,6 +973,7 @@ h5{
       
     #sidelinks{
         width: 100%;
+        height: 80px;
         background-color: rgb(19, 19, 80);
     }
     .divi{
@@ -892,8 +1002,10 @@ h5{
         /* background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20231104/pngtree-silky-cream-paper-with-a-smooth-texture-image_13800204.png");
         background-repeat: no-repeat;
         background-size: cover; */
-        margin-left: 15px;
-        padding-top: 80px;
+        width: 100%;
+        /* he */
+        margin-left: 0px;
+        padding-top: 60px;
         height: 550px;
         margin: 0px;
         margin-right: 0px;
@@ -906,11 +1018,12 @@ h5{
         background-size: cover; */
         border-radius: 4px;
         text-align: center;
-        height: 130px;
-        width: 200px;
+        height: 160px;
+        width: 100%;
         margin-top: 10px;
-        padding-top: 20px;  
-        padding-left: 70%;
+        height: 100%;
+        padding-top: 30px;  
+        /* padding-left: 70%; */
         /* margin-left: %; */
         font-size: 15px;
         border:1px solid black;
@@ -920,7 +1033,8 @@ h5{
         /* margin:30px; */
         height: 100%;
         /* display: flex; */
-        margin-left: 35px;
+        /* margin-left: 35px; */
+        
         background-image: url("https://img.freepik.com/free-vector/abstract-background-design-dark-green_53876-59276.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -971,12 +1085,13 @@ h5{
         /* padding-right: 5px; */
     }
     #about{
-        height: 1000px;
+        /* height: 1000px; */
         /* border: 1px solid black; */
         /* height: 700px; */
         /* width: 100%; */
         /* margin-right: 5%; */
-        margin-left: 35px;
+        /* margin
+        -left: 35px; */
         /* margin-bottom: 40px; */
         padding-top: 90px;
         /* margin-top: 20px; */
@@ -990,7 +1105,7 @@ h5{
         font-size: 15px;
     }
     #aboutDiv{
-        /* margin-left: 10%; */
+        margin-left: 30%;
         display: flex;
         text-align: center;
     }
@@ -1022,7 +1137,7 @@ h5{
         /* background-color: rgb(245, 210, 229); */
         padding-top: 60px;
         padding-bottom: 30px;
-        margin-left: 35px;
+        /* margin-left: 35px; */
         /* margin-right: 20px; */
         /* border-radius: 20px; */
         text-align: center;
@@ -1058,7 +1173,7 @@ h5{
         display: none;
     }
     #projects{
-        margin-left: 35px;
+        /* margin-left: 35px; */
         height: 1400px;
         margin-bottom: 0px;
         /* margin-left: 5px; */
@@ -1068,11 +1183,14 @@ h5{
         margin-left: 30%;
     }
     #projectdiv{
-        height: 1200px;
-        width: 92%;
-        /* margin: 10%; */
+        height: 1100px;
+        width: 62%;
+        margin-left: 20%;
         /* margin-top: 1%; */
-        margin: 10px;
+        /* margin: 80px; */
+        margin-right: 40px;
+        border-radius: 20px;
+        /* mar */
         /* border: 1px solid black; */
         padding-top: 2%;
         padding-left: 0%;
@@ -1084,24 +1202,26 @@ h5{
     .proitems{
         display:inline;
         height: 600px;
+        border-radius: 20px;
+        /* w */
         /* margin-bottom: 10px; */
         /* border: 1px solid black; */
     }
     .video{
     height: 210px;
     width: 100%;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     margin-right: 30px;
     bottom: 0px;
     top: 0px;
     object-fit: cover;
-    border-radius: 2px solid rgb(19, 19, 80);
+    /* border-radius: 2px solid rgb(19, 19, 80); */
     background-color: rgb(235, 234, 234);
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 #videoitem{
     /* border-radius: 10px; */
-    border-radius: 2px solid rgb(19, 19, 80);
+    /* border-radius: 2px solid rgb(19, 19, 80); */
     bottom: 0px;
     top: 0px;
     margin: 0 auto;
@@ -1142,11 +1262,21 @@ h5{
     justify-content: center;
     justify-content:space-around ;
 }
+.cardvid{
+    width: 26.3%;
+    /* height: 700px; */
+    /* border: 1px solid black; */
+    margin-left: 0%;
+}
+.cardvids{
+    /* width: 33.3%; */
+    width: 80%;
+}
 #Github{
         display: block;
         height: 100%;
         width:90;
-        margin-left: 35px;
+        margin-left: 0px;
         margin-right: 0px;
     }
     #githubimg{
@@ -1165,7 +1295,7 @@ h5{
     }
     #giticon{
         height: 60px;
-        margin-left: 30%;
+        margin-left: 40%;
         /* margin-top:10px ; */
         display: flex;
         /* border: 1px solid black; */
@@ -1215,7 +1345,7 @@ h5{
       #contact{
         text-align: center;
         height: 300px;
-        margin-left: 35px;
+        /* margin-left: 35px; */
         margin-top: 0px;
         background-image: url("https://img.freepik.com/free-vector/abstract-background-design-dark-green_53876-59276.jpg");
         background-repeat: no-repeat;
@@ -1266,7 +1396,40 @@ h5{
         margin-left: 1%;
     }
 }
-@media (min-width:580px) and (max-width: 980px) {
+@media (min-width:400px) and (max-width: 590px) {
+    /* #home{
+
+    } */
+    #mypic{
+        height: 90%;
+        width: 60%;
+    }
+}
+@media screen and (max-width: 680px){
+    #about{
+        height: 1100px;
+        margin-left:0px ;
+        /* border: 1px solid black; */
+    }
+    #home{
+        margin-left: 0%;
+    }
+    .name{
+        font-size: 10px;
+    }
+    .education
+    {
+        display: grid;
+        margin-left: 60px;
+    }
+    .profile{
+        height: 80px;
+    }
+    .portbut{
+        height: auto;
+    }
+}
+@media (min-width:590px) and (max-width: 980px) {
     /* #port{
         display: none;
     }
@@ -1299,22 +1462,85 @@ h5{
     /* #total{ */
         /* background-color: rgb(19, 19, 80); */
     /* } */
-      
+
+    html,body {
+        width: 100%;
+        margin:0%;
+        padding:0%;
+        overflow-x: hidden;
+    }
+    #body {
+        background-color :rgb(250, 250, 238);
+        /* margin-right: 0px; */
+        width: 100%;
+        margin:0;
+        padding:0;
+        /* padding-right: 0px; */
+        overflow-x: hidden;
+    } 
     #sidelinks{
         margin-left:0px ;
         width: 100%;
+        height: 100px;
         margin-top: 0px;
         /* background-color: rgb(19, 19, 80); */
     }
+    #caritems{
+        margin:0;
+    }
     .profile{
         padding-top: 0px;
-        padding-left: 0px;
+        padding-left: 10px;
+    }
+    #aboutDiv{
+        margin-left: 30%;
+    }
+    
+    #home{
+        /* margin-left: 30px;  */
+        height: 400px;
+    }
+    #skills,#caritems,#carproject,#Github{
+        /* margin-left: 30px;  */
+        height: 800px;
     }
     #name{
         text-align: center;
+
         /* margin-top: 0px; */
         margin-left: 10px;
     }
+    .portbut{
+        font-size: 14px;
+    }
+    .education{
+        font-size: 15px;
+        
+        /* display: flex; */
+        /* margin-left: 10%; */
+        margin-right: 20%;
+        justify-content: space-around;
+    }
+    .edu{
+        font-size: 10px;
+    }
+    .edu h4
+{
+    font-size: 10px;
+    margin-bottom: 0px;
+}
+#mypic{
+    margin-top: 40px;
+    height: 280px;
+}
+.edu p
+{
+    margin: 10px;
+    font-size: 1rem;
+}
+#about{
+    padding-top: 5%;
+}
     /* .divi{
         height: 100px;
         width: 200px;
@@ -1340,11 +1566,38 @@ h5{
     } */
 }
 @media screen and (max-width: 300px){
-    body{
+    html,body {
         width: 100%;
+        margin:0%;
+        padding:0%;
+        overflow-x: hidden;
+    }
+    #body {
+        background-color :rgb(250, 250, 238);
+        /* margin-right: 0px; */
+        width: 100%;
+        margin:0;
+        padding:0;
+        /* padding-right: 0px; */
+        overflow-x: hidden;
     }
     #home{
         /* background-color:s aquamarine; */
         margin-left: 0px;
     }
+    #about{
+        height: 1300px;
+    }
+    #project{
+        /* height: 800px; */
+        width: 90%;
+    }
+    #name{
+        font-size: 15px;
+    }
+    #projectdiv{
+        width: 90%;
+        margin-left: 19px;
+    }
+    
 }
