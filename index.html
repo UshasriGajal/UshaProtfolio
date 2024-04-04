@@ -1,537 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="Portfolio.css">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="portfolio.css">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    
     <script src="https://kit.fontawesome.com/accd26a21f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-gsJPAB4xi4E9c9jUcZnUgObY10UgXzJl8rUfrYYDZU5IYY5b3wPejqcvF2IzWlDO" crossorigin="anonymous">
-    <script type="text/javascript" src="Portfolio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-    <title>PROTFOLIO</title>
+    <title>Usha's Portfolio</title>
 </head>
-<body id="body">
-   
-
-        
-        <div id="total">
-        <div class="navbar sticky-top">
-        <div id="sidelinks" >
-            <div class="profile">
-                <!-- <img src="C:\Users\USHASRI\OneDrive\Pictures\portfolio.jpeg" height="30px" width="30px"> -->
-                <p id="name">USHASRI GAJAL</p>
-                <p>FULL STACK DEVELOPER</p>
-            </div>
-            <!-- <hr> -->
-            <div id="navsize" class="sticky-top" class="collapse" id="navbarToggleExternalContent">
-            <nav class="navbar sticky-top"  >
-                <div class="container-fluid">
-                  <button  onclick="navitem()" id="navbut" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" >
-                    <span class="navbar-toggler-icon">
-                  
-                
-            <button id="small">
-            <div class="topnav"  >
-                <!-- <hr> -->
-                <!-- <hr> -->
-                
-                <div class="portbut" id="portbut">
-                    <a  id="col" href="#home">Home  </a>
-                    <a id="col" href="#about">About  </a>
-                    <a id="col" href="#skills">Skills  </a>
-                    <a id="col" href="#projects">Projects</a>
-                    <a id="col" href="https://drive.google.com/file/d/1QfNJEmgS09nI1JceFo134qAc3QSfymVl/view" download >Resume</a>
-                    <a id="col" href="#Github">GitHub</a>
-                    <a id="col" href="#contact">Contact</a>
-                    <!-- <a href="javascript:void(0);" class="icon" onclick="navitem()"></a> -->
-                </div>
-
-            </div>
-        </button>
-        </span>
-        </button>
+<body>
+  <!-- <button onclick="Resume()">click here</button> -->
+    <nav class="navbar navcol navbar-dark navbar-expand-lg ">
+        <div class="container-fluid">
+          <div class="name_Div">
+            <a class="navbar-brand" href="index.html"><h3 style="color: white;">Ushasri Gajal</h3></a>
+            <p class=" fa-1x fa-beat" id="pTag">Web Developer</p>
+          </div>
+          
+          <!-- <span type="text" href="">Web Developer</span> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav" id="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#About">ABOUT</a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" type="button" href="#Resume">RESUME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" type="button" onclick="Projects()" href="#Projects">PROJECTS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PROFILE LINKS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://github.com/UshasriGajal">GITHUB</a></li>
+                  <li><a class="dropdown-item" href="https://www.hackerrank.com/profile/ushasrigajal">HACKERRANK</a></li>
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/ushasri-gajal-59b09324b/">LINKED IN</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">CONTACT</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-</div>
-    <div id="port">
-        <!-- <hr> -->
-        <!-- <hr> -->
-        <div class="portbut"><a  id="col" href="#home">Home  </a></div>
-        <div class="portbut"><a id="col" href="#about">About  </a></div>
-        <div class="portbut"><a id="col" href="#skills">Skills  </a></div>
-        <div class="portbut"><a id="col" href="#carproject">Projects</a></div>
-        <div class="portbut"><a id="col" href="https://drive.google.com/file/d/1QfNJEmgS09nI1JceFo134qAc3QSfymVl/view" download >Resume</a></div>
-        <div class="portbut"><a id="col" href="#Github">GitHub</a></div>
-        <!-- <div class="portbut"><a id="col" href="#HackerRank">HackerRank</a></div> -->
-        <div class="portbut"><a id="col" href="#contact">Contact</a></div>
+      </nav>
 
-    </div>
-           
-        </div>
-        </div>
-    
-<br>
-
-        <div class="main">
-        <div id="home">
-            <!-- <H2 id="text">Hey there!!</H2> -->
-            <div id="homeimage">
-                <!-- <div><H2 id="text">Hey there!!</H2></div> -->
-                <div id="homeitem">
-                <div id="pic">
-                    <br>
-        
-                    <img id="mypic" src="images/profilepic.jpg" height="30px" width="30px">
-                </div>
-                <div id="matter">
-                    <H2 id="text">Hey there!!</H2>
-                    <h3 id="im">I'm</h3>
-                    <h2> Ushasri Gajal</h2>
-                    <h2 >I'm into Web Development</h2>
-
-                    <p> A passionate and creative web developer with a strong foundation in client-side and server-side development. </p>
-                    <!-- <p> A passionate and creative web developer with a strong foundation in front-end and back-end technologies. </p> -->
-
-                    <hr class="hrsize">
-                    <!-- <hr> -->
-
-                </div>
+      <div class="container main col-12" id="main">
+        <div   id="About" class="row col-sm-12">
+          <div class="profile col-12 col-md-6 col-lg-5 col-xl-4">
+            <div class="col-xs-12 col-8 col-sm-8 col-md-12 col-lg-12 col-xl-11 p5-2" >
+              <img class="col-6" src="C:\Users\USHASRI\Javascript\Portfolio\images\profilepic.jpg" alt="">
             </div>
-            </div>
-        </div>
-        <br>
-        <div id="about" >
-            <div id="aboutDiv">
-                <img id="aboutimg" src="https://img.icons8.com/?size=68&id=99268&format=png" width="38px" height="38px"> <H3>About Me</H3>
-            </div>
-            <div id="aboutmatter">
-                <p >I am a <span class="wordcolor">Full-Stack developer</span>  with knowledge in <span class="wordcolor"> HTML, CSS, JAVASCRIPT,Bootstrap, React js </span>from Tirupati, India. I am an <span class="wordcolor">Information Technology</span> undergraduate from <span class="wordcolor">SVCE</span>. I am very passionate about improving my coding skills & developing applications & websites.I demonstrate a commitment to high-quality development through my <span class="wordcolor">GitHub repositories</span>, showcasing a strong dedication to crafting well-structured and efficient code.</p>
-            </div>
-            <div id="education">
-                <div id="edDiv">
-                <h2 id="my_edu">MY EDUCATION</h2>
-                <div class="education">
-                    <div class="edu col-md-4">
-                        <span>2018</span><br>
-                        <h4>SCHOOL</h4><br>
-                        <p>Keshava Reddy School </p>
-                        <P> TIRUPATI,ANDHRA PRADESH</P>
-                        <p> CGPA:9.2</p>
-                    </div>
-        
-                    <div class="edu">
-                        <span>2020</span><br>
-                        <h4>INTERMIDIATE</h4><br>
-                        <p> Sri chaitanya junior college</p>
-                        <P>TIRUPATI,ANDHRA PRADESH</P>
-                        <p>CGPA:9.0</p>
-                    </div>
-    
-                    
-                    <div class="edu">
-                        <span>2024</span><br>
-                        <h4>B.Tech</h4><br>
-                        <p>Sri Venkateshwara College Of Engineering,Tirupati</p>
-                        <P>Currently Studying </P>
-                        <p>CGPA:8.2</p>
+          </div>
+          <div class="about-text col-12 col-md-12 col-lg-7">
+            <br>
+                    <!-- <H2 style="color: rgb(6, 6, 180);">Hey there!!</H2> -->
+                <div class="me col-12">
+                    <div class="first_text">
+                        <h2 style="color: rgb(11, 11, 123);">Hey There!!</h2>
+                        <h3 style="color: rgb(252, 81, 109);">I'm</h3>
+                        <h3> Ushasri Gajal</h3>
+                        <h2 >I'm into Web Development</h2>
                     </div>
                 </div>
-             </div>
-        </div>
-        
-     </div>
-     
-     <div id="skills">
+            <div><hr></div>
+            <div>
+              <h4>A Bit About Me</h4>
+            </div>
+            <div class="bitmatter col-12">
+                <h6 >I am a <span class="wordcolor">Full-Stack developer</span>  with knowledge in <span class="wordcolor"> HTML, CSS, JAVASCRIPT,Bootstrap, React js </span>from Tirupati, India. I am an <span class="wordcolor">Information Technology</span> undergraduate from <span class="wordcolor">SVCE</span>. I am very passionate about improving my coding skills & developing applications & websites.I demonstrate a commitment to high-quality development through my <span class="wordcolor">GitHub repositories</span>, showcasing a strong dedication to crafting well-structured and efficient code.</h6>
+            </div>
+          </div>
         <br>
-     <br>
-        <h2 id="skillstext">Skills & Abilities</h2>
-        <div class="skillrow">
-            <div class="skillitem">
+          <hr>
 
-                <img id="skillimage" src="https://www.ankitweblogic.com/javascript/js_img/javascript.png" height="60px" width="100px">
-                <p class="skillname">JavaScript</p>
+          <div class="row education-div">
+            <div class="education-header col-12 col-md-4 col-lg-5">
+              <h2 style="color: rgb(103, 102, 102);">Education</h2>
             </div>
-            <div class="skillitem">
-                <img id="skillimage"  src="https://static-00.iconduck.com/assets.00/react-javascript-js-framework-facebook-icon-2048x1822-f7kq7hho.png" height="60px" width="100px">
-                <p class="skillname">React Js</p>
-            </div>
-            <div class="skillitem">
-                <img id="skillimage"  src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" height="60px" width="100px">
-                <p class="skillname">HTML5</p>
-            </div>
-        </div>
-        <div class="skillrow">
-            <div class="skillitem">
-                <img id="skillimage"  src="https://diziglobalsolution.com/wp-content/uploads/2023/04/logo-css-3-1536.png" height="60px" width="100px">
-                <p class="skillname">CSS</p>
-            </div>
-            <div class="skillitem">
-                <img id="skillimage"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png" height="60px" width="100px">
-                <p class="skillname">Python</p>
-            </div>
-            <div class="skillitem">
-                <img id="skillimage"  src="https://download.logo.wine/logo/Bootstrap_(front-end_framework)/Bootstrap_(front-end_framework)-Logo.wine.png" height="60px" width="100px">
-                <p class="skillname">Bootstrap</p>
-            </div>
-        </div>
-        <div class="skillrow">
-            <div class="skillitem">
-                <img id="skillimage"  src="https://cdn-icons-png.flaticon.com/512/25/25231.png" height="60px" width="100px">
-                <p class="skillname">GitHub</p>
-            </div>
-            <div class="skillitem"></div>
-            <div class="skillitem"></div>
-        </div>
-        <br>
-        <br>
-        <br>
-     </div>
-     <!-- <br> -->
-
-     <div id="carproject">
-        <br>
-<br>
-<br>
-        <div id="proimage" > <img src="https://www.bharat-associates.com/img/Your-Projects-Icon.jpg" alt="" height="100%" width="100%" ></div>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-
-                <div id="caritems">
-                    <div class="cardvid col-md-3 col-sm-3" >
-                        <div class="cardvids" class="card"  >
-                            <!-- <div > -->
-                                <video id="videoitem" height="100%" width="100%" loop muted autoplay="autoplay"> 
-                                    <source src="images/movieapi.mp4" type="video/mp4">
-                                </video>
-                            <!-- </div> -->
-                            
-        
-                            <div class="card-body">
-                                <div class="videomatter">
-                                    <div class="vidmat">
-                                        <h4>Movie Api</h4>
-                                        <p>This Website provides the movie posters and the information about the movie that we search for and also provide similar movie posters according to the name we search "With Responsiveness" </p>
-                                        <p>Tools used:JavaScript,Html,Css,Bootstrap</p>
-                                    </div>
-                                    <div id="projectbut">
-                                        <button class="sizebut" onclick="moviebut()">View project</button>
-                                        <button class= "sizebut" onclick="moviecode()">  View Code</button>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-        
-                        <div class="cardvid col-md-3 col-sm-3" >
-                            <div class="cardvids" class="card"  >
-                                <!-- <div > -->
-                                    <video id="videoitem" height="100%" width="100%" loop muted autoplay="autoplay">  
-                                <source src="images/currency converter.mp4" type="video/mp4">
-                            </video>
-                            <div class="card-body">
-                                <div class="videomatter">
-                                    <div class="vidmat">
-                                        <h4>Currency Converter</h4>
-                                        <p>This Website converts the one currency value to another currency value "With Responsiveness"  </p>
-                                        <p>Tools used:JavaScript,Html,Css</p>
-                                    </div>
-                                    <div id="projectbut">
-                                        <button class="sizebut" onclick="currencybut()">View project</button>
-                                        <button class= "sizebut" onclick="currencycode()">  View Code</button>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-        
-                        
-                          <div class="cardvid col-md-3 col-sm-3">
-                          <div class="cardvids" class="card" >
-                            <video  id="videoitem" height="100%" width="100%" loop muted autoplay="autoplay"> 
-                                <source src="images/tictactoe.mp4" type="video/mp4">
-                            </video>
-                            <div class="card-body">
-                                <div class="videomatter">
-                                    <div class="vidmat">
-                                    <h4>TIC TOC TOE</h4>
-                                    <p>Tic toc Toe game to play between human and computer "With Responsiveness"</p>
-                                    <p>Tools used:JavaScript,Html,Css</p>
-                                    </div>
-                                    <div id="projectbut">
-                                        <button class="sizebut" onclick="ticbut()">View project</button>
-                                        <button class= "sizebut" onclick="ticcode()">  View Code</button>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                </div>
+            <div class="education-names col-12 col-md-8 col-lg-7">
+              <div class="education-year col-12 col-md-4">
+                <p>2020-2024</p>
 
               </div>
-              <div class="carousel-item">
+              <div class="education-title col-12 col-md-8">
+                <h6>Sri Venkateswara College of Engineering(SVCE), Tirupati</h6>
+                <p>Bachelor's Degree <span>(Information Technology)</span></p>
+              </div>
+            </div>
+            <div class="education-names col-12 col-md-8 col-lg-7">
+              <div class="education-year col-12 col-md-4">
+                <p>2018-2020</p>
+
+              </div>
+              <div class="education-title col-12 col-md-8">
+                <h6>Sri Chaitanya Junior College </h6>
+                <p>Intermediate <span>(Maths, Physics, Chemistry)</span></p>
+              </div>
+            </div>
+            <div class="education-names col-12 col-md-8 col-lg-7">
+              <div class="education-year col-12 col-md-4">
+                <p>2018</p>
+
+              </div>
+              <div class="education-title col-12 col-md-8">
+                <h6>Keshava Reddy School</h6>
+                <p>10th Standard</p>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row skills-div">
+            <div class="skills-header col-12 col-md-4 col-lg-5">
+              <h3 style="color: rgb(103, 102, 102);">Skills & Expertise</h3>
+            </div>
+            <div class="skills-names col-12 col-md-8 col-lg-7">
+              <div class="skills-title col-12">
+                <ul class="py-4">
+                  <img src="https://static-00.iconduck.com/assets.00/react-javascript-js-framework-facebook-icon-2048x1822-f7kq7hho.png" alt=""> React.Js 
+                </ul>
+                <ul class="py-4">
+                  <!-- <i class="fa-brands fa-js"></i> -->
+                  <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt=""> JavaScript
+                </ul>
+                <ul class="py-4">
+                  <!-- <i class="fa-brands fa-node"></i> -->
+                  <img style="height: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png" alt=""> Python
+                </ul>
+                <ul class="py-4">
+                  <!-- <i class="fa-brands fa-html5"></i> -->
+                  <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" alt=""> HTML 
+                </ul>
+                <ul class="py-4">
+                  <!-- <i class="fa-brands fa-css3-alt"></i> -->
+                  <img style="width: 55px; height: 45px;" src="https://diziglobalsolution.com/wp-content/uploads/2023/04/logo-css-3-1536.png" alt=""> CSS
+                </ul>
+                <ul class="py-4">
+                  <!-- <i class="fa-brands fa-bootstrap"></i> -->
+                  <img style="width: 55px; height: 45px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/964px-Bootstrap_logo.svg.png" alt=""> Bootstrap
+                </ul>
                 
-                <div id="caritems">
-                    <div class="cardvid col-md-3 col-sm-3" >
-                        <div class="cardvids" class="card"  >
-                            
-                                <video id="videoitem"  height="100%" width="100%" loop muted autoplay="autoplay"> 
-                                    <source src="images/typing.mp4" type="video/mp4">
-                                </video>
-                            
-                            
-        
-                            <div class="card-body">
-                                <div class="videomatter">
-                                    <div class="vidmat">
-                                        <h4>Typing Test</h4>
-                                        <p>This Website provides the typing capacity of a person it can be modified with time for 1min, 2mins or 5mins and it also have easy,medium and hard levels</p>
-                                        <p>Tools used:JavaScript,Html,Css</p>
-                                    </div>
+                
+              </div>
+            </div>
+          </div>
+          <!-- <hr> -->
+          <!-- <hr> -->
+          <div id="Projects"><hr></div>
+        </div>
+        <div class="row project" id="Projects">
+          <div class="row project-header">
+            <div class="col-12">
+              <!-- <h1>Projects</h1> -->
+              <div id="proimage" ><img src="https://www.bharat-associates.com/img/Your-Projects-Icon.jpg" alt="" height="100%" width="100%" ></div>
+            </div>
+          </div>
+          <div class="row projects-div">
+            <div class="project-name col-12 col-md-6 col-lg-8">
+              <h3>Movie_Api</h3>
+              
+              <p>This Website provides the movie posters and the information about the movie that we search for and also provide similar movie posters according to the name we search "With Responsiveness" </p>
+                <p><strong>Tools used : </strong>JavaScript, Html, Css, Bootstrap, Rest_Api</p>
+                
+            </div>
+            <div class="project-demo col-12 col-md-6 col-lg-4">
+              <div class="gif col-12">
+                <video src="C:\Users\USHASRI\Javascript\Portfolio\images\movieapi.mp4" height="100%" width="100%" loop muted autoplay="autoplay"alt="">
+              </div>
+              <div id="view"><a href="https://ushasrigajal.github.io/MovieApi/"><button style="background-color: gray;">click here to view</button></a></div>
+            </div>
+          </div>
+          <br>
+          <div><hr></div>
+
+          <div class="row projects-div">
+            <div class="project-name col-12 col-md-6 col-lg-8">
+              <h3>Typing_Test</h3>
+              
+              <p>This Website provides the typing capacity of a person it can be modified with time for 1min, 2mins or 5mins and it also have easy,medium and hard levels</p>
+                <p><strong>Tools used : </strong>JavaScript, Html, Css</p>
+                
+            </div>
+            <div class="project-demo col-12 col-md-6 col-lg-4">
+              <div class="gif col-12">
+                <video src="C:\Users\USHASRI\Javascript\Portfolio\images\movieapi.mp4" height="100%" width="100%" loop muted autoplay="autoplay"alt="">
+              </div>
+              <div id="view"><a href="https://ushasrigajal.github.io/Typing_Test/"><button style="background-color: gray;">click here to view</button></a></div>
+            </div>
+          </div>
+          
+          <br>
+          <!-- <div><hr></div> -->
+          
+          <hr>
+          <br>
+          <div class="row projects-div">
+            <div class="project-name col-12 col-md-6 col-lg-8">
+              <h3>Currency_converter</h3>
+              
+              <p>This Website converts the one currency value to another currency value "With Responsiveness"  </p>
+              <p><strong>Tools used : </strong>JavaScript, Html, Css, Rest_Api</p>
+                
+            </div>
+            <div class="project-demo col-12 col-md-6 col-lg-4">
+              <div class="gif col-12">
+                <video src="C:\Users\USHASRI\Javascript\Portfolio\images\movieapi.mp4" height="100%" width="100%" loop muted autoplay="autoplay"alt="">
+              </div>
+              <div id="view">
+                <a href="https://ushasrigajal.github.io/CurrencyConverter/"><button style="background-color: gray;">click here to view</button></a>
+              </div>
+            </div>
+          </div>
+          <div><hr></div>
+
+          <div class="row projects-div">
+            <div class="project-name col-12 col-md-6 col-lg-8">
+              <h3>Food_Order_Page(static)</h3>
+              <p>This website is a static page using ReactJs "With Responsiveness"</p>
+              <p><strong>Tools used : </strong>ReactJs, Html, Css, JavaScript, Bootstrap</p>
+                
+            </div>
+            <div class="project-demo col-12 col-md-6 col-lg-4">
+              <div class="gif col-12">
+                <video src="C:\Users\USHASRI\Javascript\Portfolio\images\movieapi.mp4" height="100%" width="100%" loop muted autoplay="autoplay"alt="">
+              </div>
+              <div id="view">
+                <div  id="view"><a href="https://cjz648.csb.app/"><button style="background-color: gray;">click here to view</button></a></div>
+                <!-- <a href="#"><button>click here to view</button></a> -->
+              </div>
+            </div>
+          </div>
+          <!-- <div><hr></div> -->
+        </div>
+        <div id="Resume"><hr></div>
+           <div class="row resume" id="Resume">
+            <div class="row resume-header">
+              <div class="col-6 pl-4">
+                <h1>Resume</h1>
+              </div>
+              <div class="pdf col-6">
+                <a class="fa-fade" href="https://drive.google.com/file/d/1QfNJEmgS09nI1JceFo134qAc3QSfymVl/view"><button >PDF file <i class="fa-solid fa-eye"></i></button></a>
+              </div>
+            </div>
             
-                                    <div id="projectbut">
-                                        <button class="sizebut" onclick="Typebut()">View project</button>
-                                        <button class= "sizebut" onclick="Typecode()">  View Code</button>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-        
-                        <div class="cardvid col-md-3 col-sm-3">
-                          <div class="cardvids" class="card" >
-                            <video id="videoitem" height="100%" width="100%" loop muted autoplay="autoplay"> 
-                                <source src="images/zomato.mp4" type="video/mp4">
-                            </video>
-                            <div class="card-body">
-                              <div class="videomatter">
-                                <div class="vidmat">
-                                <h4>Zomato</h4>
-                                <p>This website is a static page using ReactJs "With Responsiveness"</p>
-                                <p>Tools used:ReactJs,Html,Css,Bootstrap</p>
-                                </div>
-                                <div id="projectbut">
-                                    <button class="sizebut" onclick="Zomatobut()">View project</button>
-                                    <button class= "sizebut" onclick="Zomatocode()">  View Code</button>
-                                </div>
-                            </div>
-                            </div>
-                          </div>
-                        </div>
-        
-        
-                          <div class="cardvid col-md-3 col-sm-3">
-                          <div class="cardvids" class="card" >
-                            <!-- <video id="videoitem" height="100%" width="100%" loop muted autoplay="autoplay"> 
-                                <source src="images/movieapi.mp4" type="video/mp4">
-                            </video> -->
-                            <!-- <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div> -->
-                          </div>
-                        </div>
-                </div>
+            <!-- <hr> -->
 
-              </div>
-            </div>
-            <button  class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span  class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span  class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            
+            <!-- <hr> -->
+
+            
+
+            
+            <div><hr></div>
+
           </div>
 
-     </div>   
-    
-     
-         <!-- <div id="HackerRank"></div> -->
-        <div id="projects" class="smallsize" onload="projects()">
-            <br>
-            <br>
-            <br>
-            <div id="proimage" > <img src="https://www.bharat-associates.com/img/Your-Projects-Icon.jpg" alt="" height="100%" width="100%" ></div>
-            <div id="projectdiv">
-                <div class="proitems">
-                    <div class="video">
-                        <video id="videoitem" height="100%" width="100%" loop muted autoplay="autoplay"> 
-                            <source src="images/movieapi.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="videomatter">
-                        <div class="vidmat">
-                            <h4>Movie Api</h4>
-                            <p>This Website provides the movie posters and the information about the movie that we search for and also provide similar movie posters according to the name we search "With Responsiveness" </p>
-                            <p>Tools used:JavaScript,Html,Css,Bootstrap</p>
-                        </div>
-                        <div id="projectbut">
-                            <button class="sizebut" onclick="moviebut()">View project</button>
-                            <button class= "sizebut" onclick="moviecode()">  View Code</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="proitems">
-                    <div class="video">
-                        <video id="videoitem" height="100%" width="100%" loop muted autoplay="autoplay"> 
-                            <source src="images/currency converter.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="videomatter">
-                        <div class="vidmat">
-                            <h4>Currency Converter</h4>
-                            <p>This Website converts the one currency value to another currency value "With Responsiveness"  </p>
-                            <p>Tools used:JavaScript,Html,Css</p>
-                        </div>
-                        <div id="projectbut">
-                            <button class="sizebut" onclick="currencybut()">View project</button>
-                            <button class= "sizebut" onclick="currencycode()">  View Code</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="proitems">
-                    <div class="video">
-                        <video  id="videoitem" height="100%" width="100%" loop muted autoplay="autoplay"> 
-                            <source src="images/tictactoe.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="videomatter">
-                        <div class="vidmat">
-                        <h4>TIC TOC TOE</h4>
-                        <p>Tic toc Toe game to play between human and computer "With Responsiveness"</p>
-                        <p>Tools used:JavaScript,Html,Css</p>
-                        </div>
-                        <div id="projectbut">
-                            <button class="sizebut" onclick="ticbut()">View project</button>
-                            <button class= "sizebut" onclick="ticcode()">  View Code</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="proitems">
-                    <div class="video">
-                        <video id="videoitem"  height="100%" width="100%" loop muted autoplay="autoplay"> 
-                            <source src="images/typing.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="videomatter">
-                        <div class="vidmat">
-                            <h4>Typing Test</h4>
-                            <p>This Website provides the typing capacity of a person it can be modified with time for 1min, 2mins or 5mins and it also have easy,medium and hard levels</p>
-                            <p>Tools used:JavaScript,Html,Css</p>
-                        </div>
-
-                        <div id="projectbut">
-                            <button class="sizebut" onclick="Typebut()">View project</button>
-                            <button class= "sizebut" onclick="Typecode()">  View Code</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="proitems">
-                    <div class="video">
-                        <video id="videoitem" height="100%" width="100%" loop muted autoplay="autoplay"> 
-                            <source src="images/zomato.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="videomatter">
-                        <div class="vidmat">
-                        <h4>Zomato</h4>
-                        <p>This website is a static page using ReactJs "With Responsiveness"</p>
-                        <p>Tools used:ReactJs,Html,Css,Bootstrap</p>
-                        </div>
-                        <div id="projectbut">
-                            <button class="sizebut" onclick="Zomatobut()">View project</button>
-                            <button class= "sizebut" onclick="Zomatocode()">  View Code</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-
-
-
-        <!-- <div id="resume" onclick="Resumebut()"''>Resume</div>  -->
-        <div id="Github" class="Github">
-            <br>
-            <br>
-            <div id="githubimg">
-                <div id="giticon"> <img src="images/icons8-github.gif" height="40px" width="40px"></video>
-                <h2>GitHub</h></div>
-
-                <div  class="gitimg" id="gitimg">
-                   <i class="fa-solid  fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;" ><img id="image" src="images/github.png" alt="" height="100%" width="100% ">   </i>
-                   <!-- <i class="fa-solid  fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;" ><img id="image" src="images/github.png" alt="" height="100%" width="100% ">   </i> -->
-                    <div class="overlay">My GitHub Profile</div>
-                </div>
-                
+          
+          <div class="row portfolios-div">
+            <div class="col-12 col-md-10 col-lg-6 github-div">
+              <div>
+                <h4>Github-Profile</h4>
+              </div>
+              <div class="github-pic">
+                <img src="github-pic.png" alt="">
+              </div>
+              <div>
+                <p></p>
+                <a href="https://github.com/UshasriGajal"><button style="background-color: gray;">View Profile</button></a>
+              </div>
 
             </div>
-            <div id="gitbuttons">
-                <button class="profilebut" onclick="profilebut()"> View my Profile</button>
-                <button class="profilebut" onclick="Repositorybut()"> View my  Respositories</button>
-            </div>
-        </div> 
-        <!-- <div id="HackerRank">
-            <div id="hacker">
-                <div id="homeimg" class="fa-3x">
-                    <i class="fa-solid  fa-beat"><p>HackerRank</p> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/HackerRank_Icon-1000px.png/800px-HackerRank_Icon-1000px.png" height="30px" width="30px"></i>
-                    </div>
-                <div id="badge">
-                <div class="rank"> HACKOS 
-                    <p>3184</p>
-                </div>
-                 <div class="rank"><img src="https://hrcdn.net/fcore/assets/generated-badges/problem-solving_level_3_stars_5_linkedin-87839cf294.png" height="80px" width="150px"></div> -->
-                <!-- <div class="rank" > <p> 191230</p><i class="fa-solid  fa-beat"> <img src="https://img.icons8.com/?size=96&id=O713QAUVtMnH&format=png" alt="">
-                </i>
-                
-                </div>
-            </div>
-            </div>
-        </div> --> 
-        <div id="contact">
-            
-            <div id="contactdiv">
-                <div id="contdiv" >
-                    <img src="https://img.icons8.com/?size=72&id=113641&format=png" height="30px" width="30px"> Contact Me
 
-                    
-                </div>
-                
-                <div id="maincont" >
-                    <div id="linkes">
-                        <img class="imgcol" src="https://img.icons8.com/?size=80&id=68248&format=png" id="contimg" alt="">ushasrigajal@gmail.com</div>
-                    <div id="linkes">
-                     <img  id="call"     src="https://img.icons8.com/?size=52&id=43436&format=png" > 9390986960
-                    </div>
-                    <div id="linkes">
-
-                        <img src="https://img.icons8.com/?size=60&id=43162&format=png" alt="" id="contimg"> Bangalore
-
-                        <!-- <img src="images/icons8-location.gif" alt="" id="contimg"> Bangalore> -->
-                    </div>
-                    <div id="linkes">
-                        <button id="linked" onclick="linkedin()"> <img src="https://img.icons8.com/?size=80&id=108812&format=png" alt="" id="call"> LinkedIn</button>
-                    </div>
-                    <div id="linkes">
-                        <button id="linked" onclick="profilebut()"><img src="https://img.icons8.com/?size=60&id=SyIpM4vSpYTF&format=png" alt=""id="call" > Github</button>
-                    </div>
-                </div>
-            </div>
+          </div>
+          
         </div>
+      </div>
+      <div><hr></div>
+      <div id="contact" >Contact Me</div>
+      <div style="background-color: gray;" class="footer " id="footer">
+        <div style="font-size: 25px;" class="col-12 col-md-6 col-lg-2">
+          <h3>Phone</h3>
+          <i class="fa-solid fa-phone fa-bounce"> </i>
+          9390986960
+        </div>
+        <div style="font-size: 20px;" class="col-12 col-md-6 col-lg-4">
+          <h3>Gmail</h3>
+          <i style="font-size: 25px;" class="fa-solid fa-envelope fa-flip"> </i>
+          ushasrigajal@gmail.com
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <h3>Links</h3>
+          <div class="col icons">
+            <a class="col-6 " href="https://github.com/UshasriGajal"><i class="fa-brands fa-github"> </i> github</a>
+            <a class="col-6 "href="https://www.linkedin.com/in/ushasri-gajal-59b09324b/"><i class="fa-brands fa-linkedin"></i> linkedin</a>
+            <a class="col-6 "href="https://www.hackerrank.com/profile/ushasrigajal"><i class="fa-brands fa-hackerrank"></i>  hackerrank</a>
+            <!-- <a class="col-6 "href="https://www.instagram.com/_m_r__vicky/"><i class="fa-brands fa-instagram"></i>  instagram</a> -->
+          </div>
+        </div>
+        <div style="font-size: 19px;" class="col-12 col-md-6 col-lg-2">
+          <h3>Location</h3>
+          <i style="font-size: 25px;" class="fa-solid fa-location-dot fa-fade"></i>
+          Hyderabad
         </div>
 
-       
+      </div>
+      </div>
 
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top  <i class="fa-solid fa-up-long"></i></button>
+      <script type="text/javascript" src="portfolio.js"></script>
     
-    </div> 
-   
 </body>
-
 </html>
+
+
+
+
+
