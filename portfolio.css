@@ -217,7 +217,7 @@ html, body {
     
     top: 50%;
     left: 50%;
-    transform: translate(-0%, -0%);
+/*     transform: translate(-0%, -0%); */
     width: 100%;
   }
   .me div {
@@ -231,7 +231,7 @@ html, body {
     letter-spacing: 4px;
     margin-bottom: 20px;
     /* background: black; */
-    position: relative;
+/*     position: relative; */
     animation: first_text_anim 3s 1;
   }
   @keyframes first_text_anim {
