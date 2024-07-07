@@ -31,6 +31,9 @@
 .nav-link{
     color: gray;
 }
+.nav-link:hover{
+    color: gray;
+}
 .name_Div{
     /* border: 1px solid black; */
     background-color:gray;
