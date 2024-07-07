@@ -22,11 +22,15 @@
 <body>
   <!-- <button onclick="Resume()">click here</button> -->
     <nav class="navbar navcol navbar-dark navbar-expand-lg ">
+        
         <div class="container-fluid">
-          <div class="name_Div">
-            <a class="navbar-brand" href="index.html"><h3 style="color: white;">Ushasri Gajal</h3></a>
-            <p class=" fa-1x fa-beat" id="pTag">Web Developer</p>
+          <div class="nadiv">
+            <div class="name_Div">
+              <a class="navbar-brand" href="index.html"><h3 style="color: white;">Ushasri Gajal</h3></a>
+              <p class=" fa-1x fa-beat" id="pTag">Web Developer</p>
+            </div>
           </div>
+          
           
           <!-- <span type="text" href="">Web Developer</span> -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,13 +39,16 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav" id="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#About">ABOUT</a>
+                <a class="nav-link " aria-current="page" href="#About">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">SKILLS</a>
               </li>
               <li class="nav-item">
                <a class="nav-link" type="button" href="#Resume">RESUME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" type="button" onclick="Projects()" href="#Projects">PROJECTS</a>
+                <a class="nav-link " type="button" onclick="Projects()" href="#Projects">PROJECTS</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -63,9 +70,10 @@
 
       <div class="container main col-12" id="main">
         <div   id="About" class="row col-sm-12">
+          <!-- <div class="aboutme"> -->
           <div class="profile col-12 col-md-6 col-lg-5 col-xl-4">
             <div class="col-xs-12 col-8 col-sm-8 col-md-12 col-lg-12 col-xl-11 p5-2" >
-              <img class="col-6" src="images/profilepic.jpg" alt="">
+              <img class="col-6" src="C:\Users\USHASRI\Javascript\Portfolio\images\profilepic.jpg" alt="">
             </div>
           </div>
           <div class="about-text col-12 col-md-12 col-lg-7">
@@ -79,15 +87,17 @@
                         <h2 >I'm into Web Development</h2>
                     </div>
                 </div>
-            <div><hr></div>
-            <div>
-              <h4>A Bit About Me</h4>
-            </div>
+            <!-- <div><hr></div> -->
+            <!-- <div>
+              <h2 style="color: rgb(11, 11, 123);">About Me</h2>
+            </div> -->
+            <br>
             <div class="bitmatter col-12">
-                <h6 >I am a <span class="wordcolor">Full-Stack developer</span>  with knowledge in <span class="wordcolor"> HTML, CSS, JAVASCRIPT,Bootstrap, React js </span>from Tirupati, India. I am an <span class="wordcolor">Information Technology</span> undergraduate from <span class="wordcolor">SVCE</span>. I am very passionate about improving my coding skills & developing applications & websites.I demonstrate a commitment to high-quality development through my <span class="wordcolor">GitHub repositories</span>, showcasing a strong dedication to crafting well-structured and efficient code.</h6>
+                <h6 >I am a <span class="wordcolor">Full-Stack developer</span>  with knowledge in <span class="wordcolor"> HTML, CSS, JAVASCRIPT,Bootstrap, React js </span>from Tirupati, India. I am an <span class="wordcolor">Information Technology</span> undergraduate from <span class="wordcolor">SVCE</span>. I am very passionate about improving my coding skills & developing applications & websites.</h6>
             </div>
           </div>
-        <br>
+        </div>
+         <br>
           <hr>
 
           <div class="row education-div">
@@ -96,7 +106,7 @@
             </div>
             <div class="education-names col-12 col-md-8 col-lg-7">
               <div class="education-year col-12 col-md-4">
-                <p>2020-2024</p>
+                <p class="year">2020-2024</p>
 
               </div>
               <div class="education-title col-12 col-md-8">
@@ -127,130 +137,163 @@
           </div>
           <hr>
 
-          <div class="row skills-div">
-            <div class="skills-header col-12 col-md-4 col-lg-5">
-              <h3 style="color: rgb(103, 102, 102);">Skills & Expertise</h3>
+
+          <div id="skills">
+            <h2 id="skillstext">Skills & Abilities</h2>
+            <div class="skillrow">
+                <div class="skillitem">
+    
+                    <img id="skillimage" src="https://www.ankitweblogic.com/javascript/js_img/javascript.png" height="60px" width="100px">
+                    <p class="skillname">JavaScript</p>
+                </div>
+                <div class="skillitem">
+                    <img id="skillimage"  src="https://static-00.iconduck.com/assets.00/react-javascript-js-framework-facebook-icon-2048x1822-f7kq7hho.png" height="60px" width="100px">
+                    <p class="skillname">React Js</p>
+                </div>
+                <div class="skillitem">
+                    <img id="skillimage"  src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" height="60px" width="100px">
+                    <p class="skillname">HTML5</p>
+                </div>
             </div>
-            <div class="skills-names col-12 col-md-8 col-lg-7">
-              <div class="skills-title col-12">
-                <ul class="py-4">
-                  <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt=""> React.Js 
-                </ul>
-                <ul class="py-4">
-                  <!-- <i class="fa-brands fa-js"></i> -->
-                  <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt=""> JavaScript
-                </ul>
-                <ul class="py-4">
-                  <!-- <i class="fa-brands fa-node"></i> -->
-                  <img style="height: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png" alt=""> Python
-                </ul>
-                <ul class="py-4">
-                  <!-- <i class="fa-brands fa-html5"></i> -->
-                  <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" alt=""> HTML 
-                </ul>
-                <ul class="py-4">
-                  <!-- <i class="fa-brands fa-css3-alt"></i> -->
-                  <img style="width: 55px; height: 45px;" src="https://diziglobalsolution.com/wp-content/uploads/2023/04/logo-css-3-1536.png" alt=""> CSS
-                </ul>
-                <ul class="py-4">
-                  <!-- <i class="fa-brands fa-bootstrap"></i> -->
-                  <img style="width: 55px; height: 45px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/964px-Bootstrap_logo.svg.png" alt=""> Bootstrap
-                </ul>
-                
-                
-              </div>
+            <div class="skillrow">
+                <div class="skillitem">
+                    <img id="skillimage"  src="https://diziglobalsolution.com/wp-content/uploads/2023/04/logo-css-3-1536.png" height="60px" width="100px">
+                    <p class="skillname">CSS</p>
+                </div>
+                <div class="skillitem">
+                    <img id="skillimage"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png" height="60px" width="100px">
+                    <p class="skillname">Python</p>
+                </div>
+                <div class="skillitem">
+                    <img id="skillimage"  src="https://download.logo.wine/logo/Bootstrap_(front-end_framework)/Bootstrap_(front-end_framework)-Logo.wine.png" height="60px" width="100px">
+                    <p class="skillname">Bootstrap</p>
+                </div>
             </div>
-          </div>
-          <!-- <hr> -->
-          <!-- <hr> -->
-          <div id="Projects"><hr></div>
-        </div>
-        <div class="row project" id="Projects">
+            <div class="skillrow">
+                <div class="skillitem">
+                    <img id="skillimage"  src="https://cdn-icons-png.flaticon.com/512/25/25231.png" height="60px" width="100px">
+                    <p class="skillname">GitHub</p>
+                </div>
+                <div class="skillitem"></div>
+                <div class="skillitem"></div>
+            </div>
+         </div>
+
+
+          
+          <div id="projects"><hr></div>
           <div class="row project-header">
             <div class="col-12">
-              <!-- <h1>Projects</h1> -->
-              <div id="proimage" ><img src="https://icons4web.com/wp-content/uploads/2017/11/Projects-simple-icon.-Projects-simple-button-179874.jpg" alt="" height="100%" width="100%" ></div>
+            
+              <div id="proimage" ><img src="https://www.bharat-associates.com/img/Your-Projects-Icon.jpg" alt="" height="100%" width="100%" ></div>
             </div>
           </div>
-          <div class="row projects-div">
-            <div class="project-name col-12 col-md-6 col-lg-8">
-              <h3>Movie_Api</h3>
-              
-              <p>This Website provides the movie posters and the information about the movie that we search for and also provide similar movie posters according to the name we search "With Responsiveness" </p>
-                <p><strong>Tools used : </strong>JavaScript, Html, Css, Bootstrap, Rest_Api</p>
-                
-            </div>
-            <div class="project-demo col-12 col-md-6 col-lg-4">
-              <div class="gif col-12">
-                <video src="images/movieapi.mp4" height="100%" width="100%" loop muted autoplay="autoplay"alt="">
-              </div>
-              <div id="view"><a href="https://ushasrigajal.github.io/MovieApi/"><button style="background-color: gray;">click here to view</button></a></div>
-            </div>
-          </div>
-          <br>
-          <div><hr></div>
-
-          <div class="row projects-div">
-            <div class="project-name col-12 col-md-6 col-lg-8">
-              <h3>Typing_Test</h3>
-              
-              <p>This Website provides the typing capacity of a person it can be modified with time for 1min, 2mins or 5mins and it also have easy,medium and hard levels</p>
-                <p><strong>Tools used : </strong>JavaScript, Html, Css</p>
-                
-            </div>
-            <div class="project-demo col-12 col-md-6 col-lg-4">
-              <div class="gif col-12">
-                <video src="images/typing.mp4" height="100%" width="100%" loop muted autoplay="autoplay"alt="">
-              </div>
-              <div id="view"><a href="https://ushasrigajal.github.io/Typing_Test/"><button style="background-color: gray;">click here to view</button></a></div>
-            </div>
-          </div>
-          
-          <br>
-          <!-- <div><hr></div> -->
-          
-          <hr>
-          <br>
-          <div class="row projects-div">
-            <div class="project-name col-12 col-md-6 col-lg-8">
-              <h3>Currency_converter</h3>
-              
-              <p>This Website converts the one currency value to another currency value "With Responsiveness"  </p>
-              <p><strong>Tools used : </strong>JavaScript, Html, Css, Rest_Api</p>
-                
-            </div>
-            <div class="project-demo col-12 col-md-6 col-lg-4">
-              <div class="gif col-12">
-                <video src="images/currency converter.mp4" height="100%" width="100%" loop muted autoplay="autoplay"alt="">
-              </div>
-              <div id="view">
-                <a href="https://ushasrigajal.github.io/CurrencyConverter/"><button style="background-color: gray;">click here to view</button></a>
-              </div>
-            </div>
-          </div>
-          <div><hr></div>
-
-          <div class="row projects-div">
-            <div class="project-name col-12 col-md-6 col-lg-8">
-              <h3>Food_Order_Page(static)</h3>
-              <p>This website is a static page using ReactJs "With Responsiveness"</p>
-              <p><strong>Tools used : </strong>ReactJs, Html, Css, JavaScript, Bootstrap</p>
-                
-            </div>
-            <div class="project-demo col-12 col-md-6 col-lg-4">
-              <div class="gif col-12">
-                <video src="images/zomato.mp4" height="100%" width="100%" loop muted autoplay="autoplay"alt="">
-              </div>
-              <div id="view">
-                <div  id="view"><a href="https://cjz648.csb.app/"><button style="background-color: gray;">click here to view</button></a></div>
-                <!-- <a href="#"><button>click here to view</button></a> -->
-              </div>
-            </div>
-          </div>
-          <!-- <div><hr></div> -->
         </div>
-        <div id="Resume"><hr></div>
+        <div class="row project" id="Projects" >
+
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row projects-div">
+                  <div class="project-name col-12 col-md-6 col-lg-8">
+                    <h3>Movie_Api</h3>
+                    
+                    <p>This Website provides the movie posters and the information about the movie that we search for and also provide similar movie posters according to the name we search "With Responsiveness" </p>
+                      <p><strong>Tools used : </strong>JavaScript, Html, Css, Bootstrap, Rest_Api</p>
+                      
+                  </div>
+                  <div class="project-demo col-12 col-md-6 col-lg-4">
+                    <div class="gif col-12">
+                      <video src="C:\Users\USHASRI\Javascript\Portfolio\images\movieapi.mp4" height="100%" width="100%" loop muted autoplay="autoplay"alt="">
+                    </div>
+                    <div id="view"><a href="https://ushasrigajal.github.io/MovieApi/"><button style="background-color: #edecec;">click here to view</button></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row projects-div">
+                  <div class="project-name col-12 col-md-6 col-lg-8">
+                    <h3>Typing_Test</h3>
+                    
+                    <p>This Website provides the typing capacity of a person it can be modified with time for 1min, 2mins or 5mins and it also have easy,medium and hard levels</p>
+                      <p><strong>Tools used : </strong>JavaScript, Html, Css</p>
+                      
+                  </div>
+                  <div class="project-demo col-12 col-md-6 col-lg-4">
+                    <div class="gif col-12">
+                      <video src="C:\Users\USHASRI\Javascript\Portfolio\images\movieapi.mp4" height="100%" width="100%" loop muted autoplay="autoplay"alt="">
+                    </div>
+                    <div id="view"><a href="https://ushasrigajal.github.io/Typing_Test/"><button style="background-color: #edecec;">click here to view</button></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row projects-div">
+                  <div class="project-name col-12 col-md-6 col-lg-8">
+                    <h3>Currency_converter</h3>
+                    
+                    <p>This Website converts the one currency value to another currency value "With Responsiveness"  </p>
+                    <p><strong>Tools used : </strong>JavaScript, Html, Css, Rest_Api</p>
+                      
+                  </div>
+                  <div class="project-demo col-12 col-md-6 col-lg-4">
+                    <div class="gif col-12">
+                      <video src="C:\Users\USHASRI\Javascript\Portfolio\images\movieapi.mp4" height="100%" width="100%" loop muted autoplay="autoplay"alt="">
+                    </div>
+                    <div id="view">
+                      <a href="https://ushasrigajal.github.io/CurrencyConverter/"><button style="background-color: #edecec;">click here to view</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row projects-div">
+                  <div class="project-name col-12 col-md-6 col-lg-8">
+                    <h3>Food_Order_Page(static)</h3>
+                    <p>This website is a static page using ReactJs "With Responsiveness"</p>
+                    <p><strong>Tools used : </strong>ReactJs, Html, Css, JavaScript, Bootstrap</p>
+                      
+                  </div>
+                  <div class="project-demo col-12 col-md-6 col-lg-4">
+                    <div class="gif col-12">
+                      <video src="C:\Users\USHASRI\Javascript\Portfolio\images\movieapi.mp4" height="100%" width="100%" loop muted autoplay="autoplay"alt="">
+                    </div>
+                    <div id="view">
+                      <div  id="view"><a href="https://cjz648.csb.app/"><button style="background-color: #edecec;">click here to view</button></a></div>
+                      
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+         
+          
+
+          
+          
+        </div>
+        
+        <div id="Resume"></div>
+        <div><hr></div>
            <div class="row resume" id="Resume">
+            
             <div class="row resume-header">
               <div class="col-6 pl-4">
                 <h1>Resume</h1>
@@ -259,16 +302,12 @@
                 <a class="fa-fade" href="https://drive.google.com/file/d/1mIMeLQOQsXjYGnT0vtTJfziaNPbUVmX4/view?usp=sharing"><button >PDF file <i class="fa-solid fa-eye"></i></button></a>
               </div>
             </div>
+            <hr>
             
-            <!-- <hr> -->
-
-            
-            <!-- <hr> -->
-
             
 
             
-            <div><hr></div>
+            <!-- <div><hr></div> -->
 
           </div>
 
@@ -279,7 +318,7 @@
                 <h4>Github-Profile</h4>
               </div>
               <div class="github-pic">
-                <img src="images/github.png" alt="">
+                <img src="github-pic.png" alt="">
               </div>
               <div>
                 <p></p>
@@ -324,7 +363,7 @@
       </div>
 
       <button onclick="topFunction()" id="myBtn" title="Go to top">Top  <i class="fa-solid fa-up-long"></i></button>
-      <script type="text/javascript" src="Portfolio.js"></script>
+      <script type="text/javascript" src="portfolio.js"></script>
     
 </body>
 </html>
