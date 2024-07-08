@@ -516,9 +516,22 @@ hr{
     text-align: center;
     color: white;
 }
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 18px;
+    font-style: italic;
+}
+#contact{
+    background-color: gray;
+    font-size: 35px;
+    text-align: center;
+    color: yellow;
+}
 .footer > div > h3{
     /* text-align: center; */
-    color: rgb(209, 209, 245);
+    color: rgb(241, 93, 118)   ;
 }
 .icons{
     font-size: 20px;
@@ -534,6 +547,22 @@ hr{
 /* #Resume, #Projects{
     margin-top: 6%;
 } */
+#Btn {
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(241, 93, 118);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
 button{
     border: 0;
     border-radius: 0.25rem;
@@ -552,42 +581,7 @@ nav{
 }
 body{
     /* background-color: rgb(246, 246, 239); */
-    background-color: #edecec;
+    background-color: #f2eaea;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-    /* font-family: Madefor,Helvetica Neue,Helvetica,Arial,メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif; */
-}
-/* .dropdown-menu{
-    background-color: rgb(246, 246, 239);;
-} */
-a{
-    text-decoration: none;
-}
-p{
-    font-size: 18px;
-    font-style: italic;
-}
-#contact{
-    background-color: gray;
-    font-size: 35px;
-    text-align: center;
-    color: white;
-}
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 25px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: rgb(241, 93, 118);
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
 }
 
-#myBtn:hover{
-  background-color: #555;
-}
