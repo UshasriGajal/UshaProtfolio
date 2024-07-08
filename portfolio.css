@@ -277,23 +277,15 @@ nav{
     margin-top: 5%;
     border-radius: 10%;
 }
-@media (max-width:700px) {
+@media (max-width:770px) {
 
-/* #projects-items{
-    display: block;
-    background-color: #edecec;
-} */
-/* .project{
-    background-color: #edecec;
-    display: none
-} */
+
 .project-name{
     height: 250px;
 }
 .project{
     display: block;
-    height: 550px;
-}
+    height: 650px;
 }
 @media (max-width:994px) {
     .container-fluid{
@@ -428,6 +420,10 @@ hr{
     }
     .skillitem{
         margin: 0px;
+    }
+    .project{
+        display: block;
+        height: 600px;
     }
     .resume{
         margin-left: 5%;
