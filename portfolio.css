@@ -17,9 +17,9 @@ nav{
 }
 .container-fluid{
     background-color: white;
-    margin-top: 4%;
+/*     margin-top: 4%; */
     padding: 0px;
-    position: fixed;
+/*     position: fixed; */
     /* border: 3px solid white; */
     /* border-left: 10px solid gray; */
 
