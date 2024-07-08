@@ -45,6 +45,7 @@ nav{
 .nav-link{
     color: gray;
 }
+
 .nav-link:hover{
     color: rgb(241, 93, 118);
 }
