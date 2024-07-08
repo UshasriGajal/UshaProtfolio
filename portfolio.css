@@ -420,7 +420,7 @@ hr{
         width: 100%;
     }
     #About{
-        min-height: 1000px;
+       min-height: 100%;
     }
     #skills{
         margin-left: 0px;
