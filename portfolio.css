@@ -372,6 +372,11 @@ nav{
 
         width: 200px;
     }
+
+    .education-div{
+        padding: 3%;
+        /* border: 1px solid black; */
+    }
 }
 @media (max-width:440px){
     .github-pic, .hackerrank-pic{
