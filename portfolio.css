@@ -243,22 +243,8 @@ nav{
     margin-bottom: 20px;
     /* background: black; */
     /* position: relative; */
-    animation: first_text_anim 3s 1;
   }
-  @keyframes first_text_anim {
-    0% {
-      color: black;
-      margin-bottom: -20px;
-    }
-    30% {
-      letter-spacing: 10px;
-      margin-bottom: -10px;
-    }
-    85% {
-      letter-spacing: 4px;
-      margin-bottom: -10px;
-    }
-  }  
+  
 .profile{
     /* border: 1px solid black; */
     display: flex;
