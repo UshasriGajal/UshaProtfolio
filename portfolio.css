@@ -45,7 +45,6 @@ nav{
 .nav-link{
     color: gray;
 }
-
 .nav-link:hover{
     color: rgb(241, 93, 118);
 }
@@ -96,7 +95,7 @@ nav{
 }
 #About > div{
     /* border: 1px solid black; */
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
     /* text-align: center; */
     /* height: 30%; */
     /* width: 100%; */
@@ -136,7 +135,7 @@ nav{
     /* border: 1px solid black; */
 }
 .skillitem{
-    height: 60px;
+    height: 70px;
     width: 60px;
     /* width: 33.3%; */
     /* border: 1px solid black; */
@@ -146,8 +145,11 @@ nav{
 }
 
 #skillimage{
-    height: 40px;
+    height: 55px;
     width: 80px;
+}
+.jsImg{
+    height: 50px;
 }
  .bitmatter{
     height: 180px;
@@ -227,7 +229,7 @@ nav{
 .me {
     
     top: 50%;
-    left: 50%;
+    /* left: 50%; */
     /* transform: translate(-0%, -0%); */
     width: 100%;
   }
@@ -243,6 +245,7 @@ nav{
     margin-bottom: 20px;
     /* background: black; */
     /* position: relative; */
+    /* animation: first_text_anim 3s 1; */
   }
   
 .profile{
@@ -279,12 +282,25 @@ nav{
     /* display: flex; */
 }
 @media (max-width:770px) {
-
+    /* .me{
+        margin-left: 20%;
+    } */
+    .education-div{
+        padding-left: 5%;
+        /* border: 1px solid black; */
+    }
     #proimage{
         /* margin-top: 30px; */
         margin-left: 20%;
         
     }
+    .first_text{
+        margin: 0%;
+        margin-left: 15%;
+    }
+    /* .education-div{
+        margin-left: 10%;
+    } */
 
 .project-name{
     height: 250px;
@@ -298,6 +314,16 @@ nav{
 }
 }
 @media (max-width:994px) {
+    .container{
+        width: 100%;
+        margin: 0px;
+        margin-right: 0px;
+        border: 1px solid black;
+    }
+    .About{
+        margin-left: 5%;
+        display: flex;
+    }
     .container-fluid{
         background-color: gray;
         color: white;
@@ -347,6 +373,12 @@ nav{
     }
     #pTag{
         margin-left: 15%;
+    }
+    #skills{
+        border: 1px solid black;
+        
+        padding-left: 5%;
+        padding-left: 5%;
     }
     
     
@@ -398,6 +430,7 @@ hr{
 }
 .education-div{
     display: flex;
+    flex-wrap: wrap;
     justify-content: end;
     /* flex-direction:row-reverse ; */
 }
