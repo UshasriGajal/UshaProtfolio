@@ -366,6 +366,13 @@ nav{
     height: 100%;
     width: 100%;
 }
+@media (max-width:322px){
+    .name_Div{
+    border: 1px solid black;
+
+        width: 200px;
+    }
+}
 @media (max-width:440px){
     .github-pic, .hackerrank-pic{
         /* border: 1px solid black; */
