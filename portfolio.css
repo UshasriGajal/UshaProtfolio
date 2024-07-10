@@ -374,7 +374,8 @@ nav{
     }
 
     .education-div{
-        padding: 3%;
+
+	    padding:3%
         /* border: 1px solid black; */
     }
 }
@@ -388,7 +389,7 @@ nav{
     }
     #skills{
 /*         border: 1px solid black; */
-        
+        border:none;
         padding-left: 5%;
         padding-left: 5%;
     }
